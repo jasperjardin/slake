@@ -1,0 +1,107 @@
+.btn{
+    font-family: $font-general;
+    font-size: $size-btn-big;
+    font-weight: $font-w-bold;
+    letter-spacing: $letter-spa;
+    border-radius: $b-radius-min;
+    padding: $space-normal;
+    transition: $transition-bg;
+    position: relative;
+    border: $color-text solid 1px;
+    line-height: $cap-height;
+    svg, img{
+        max-width: $space-big;
+        max-height: $space-big;
+        line-height: 0;
+        fill: $color-white;
+        path{
+            fill: $color-white;    
+        }
+    }
+    span{
+        font-weight: $font-w-regular;
+        display: inline-block;
+        padding: $space-x-small;
+        font-size: $size-x-small;
+        vertical-align: middle;
+        text-align: center;
+        margin-top: -5px;
+        border: $color-text solid 1px;
+        border-radius: $b-radius-min;
+    }
+    &.btn-primary{
+        background: $color-primary;
+        border-color: $color-primary;
+        color: $color-white;
+        &:hover, &:active, &:focus{
+            background: $color-text;
+            border-color: $color-text;
+        }
+    }
+    &.btn-secondary{
+        background: $color-secondary;
+        border-color: $color-secondary;
+        color: $color-text;
+        &:hover, &:active, &:focus{
+            background: $color-primary;
+            border-color: $color-primary;
+            color: $color-secondary;
+        }
+    }
+    &.btn-text{
+        background: $color-text;
+        border-color: $color-text;
+        color: $color-secondary;
+        &:hover, &:active, &:focus{
+            background: $color-white;
+            border-color: $color-text;
+            color: $color-text;
+        }
+    }
+    &.btn-small {
+        text-transform: uppercase;
+        font-size: $size-btn;
+        font-weight: $font-w-regular;
+        letter-spacing: $letter-spa;
+    }
+
+    &.btn-q{
+        background: $color-white;
+        border-color: $color-text;
+        color: $color-text;
+
+        span {
+            border: $color-text solid 1px;
+        }
+
+        &:hover, &:active, &:focus{
+            color: $color-white;
+            background: $color-text;
+            border-color: $color-text;
+            
+            span {
+                border: $color-white-2 solid 1px;
+            }
+        }
+
+        &.btn-q-y {
+            color: $color-green;
+        }
+
+        &.btn-q-n {
+            color: $color-primary;
+        }
+    }
+    &.btn-left {
+        float: left;
+    }
+    &.btn-right {
+        float: right;
+    }
+    &.btn-full {
+        width: 100%;
+    }
+    &.btn-m-top {
+        margin-top: $space-big;
+    }
+}

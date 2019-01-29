@@ -1,0 +1,139 @@
+/*------------------------------------------------------------------
+ CSS for the WordPress Admin
+
+ [Table of Contents]
+
+ /*------------------------------------------------------------------
+ 1.0  General
+ 2.0  jQuery Plugins
+ 3.0  Alpha
+ 4.0  Beta
+ 5.0  Layouts
+ 6.0  Spaces
+ 7.0  General WordPress
+ 8.0  Forms
+ 9.0 Menus
+ 10.0 Settings
+ 11.0 Metabox
+ 12.0 Typography
+ 13.0 3rd Party Plugins
+ 14.0 Buttons
+ 15.0 Animations
+ -------------------------------------------------------------------*/
+.primary {
+  color: #ec5724;
+}
+
+.color-primary {
+  color: #ec5724;
+}
+
+.dark {
+  color: #000;
+}
+
+.light {
+  color: #fff;
+}
+
+.border-primary {
+  border-color: #ec5724;
+}
+
+.border-bottom-primary {
+  border-bottom-color: #ec5724;
+}
+
+.background-primary {
+  background-color: #ec5724;
+}
+
+/*------------------------------------------------------------------
+ 1.0  General
+ -------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+ 2.0   jQuery Plugins
+ -------------------------------------------------------------------*/
+.slake_select2 + .select2 .select2-selection {
+  background-color: #f1f1f1;
+}
+
+.slake_select2.sortable + .select2 ul.select2-selection__rendered {
+  padding: 5px 5px 0;
+  background-color: transparent;
+}
+
+.slake_select2.sortable + .select2 ul.select2-selection__rendered li {
+  width: 95%;
+  padding: 0.5px 5px 2.5px;
+  margin: 2.5px 0;
+}
+
+.slake_select2.sortable + .select2 ul.select2-selection__rendered li.select2-selection__choice {
+  background-color: #e4e4e4;
+  cursor: pointer;
+}
+
+.slake_select2.sortable + .select2 ul.select2-selection__rendered li.select2-selection__choice:hover, .slake_select2.sortable + .select2 ul.select2-selection__rendered li.select2-selection__choice:focus {
+  background-color: #c1c1c1;
+}
+
+.slake_select2.sortable + .select2 ul.select2-selection__rendered li.ui-sortable-helper {
+  background-color: #c1c1c1;
+}
+
+.slake_select2.sortable + .select2 ul.select2-selection__rendered li.select2-search--inline {
+  padding: 0;
+  width: 99%;
+}
+
+.slake_select2.sortable + .select2 ul.select2-selection__rendered li .select2-search__field {
+  min-width: 100%;
+  background-color: #eeeeee;
+  padding: 5px 2.5px;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+  box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+/*------------------------------------------------------------------
+ 3.0  Alpha
+ -------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+ 4.0  Beta
+ -------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+ 5.0  Layouts
+ -------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+ 6.0  Spaces
+ -------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+ 7.0  General WordPress
+ -------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+ 8.0  Forms
+ -------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+ 9.0 Menus
+ -------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+ 10.0 Settings
+ -------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+ 11.0 Metabox
+ -------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+ 12.0 Typography
+ -------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+ 13.0 3rd Party Plugins
+ -------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+ 14.0 Buttons
+ -------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+ 15.0 Animations
+ -------------------------------------------------------------------*/
+
+/*# sourceMappingURL=slake-admin.css.map */

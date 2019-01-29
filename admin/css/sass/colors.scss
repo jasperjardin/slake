@@ -1,0 +1,42 @@
+$primary: #ec5724;
+
+$transparent: transparent;
+$light: #fff;
+
+$light_100: #eeeeee;
+$light_101: #e4e4e4;
+$light_102: #f1f1f1;
+$light_110: #dcdcdc;
+$light_111: #dedede;
+
+$dark: #000;
+$dark_100: #c1c1c1;
+
+$dark_rgba_50: rgba(0, 0, 0, 0.5);
+
+.primary {
+    color: $primary;
+}
+
+.color-primary {
+	color: $primary;
+}
+
+.dark {
+	color: $dark;
+}
+.light {
+	color: $light;
+}
+
+.border-primary {
+	border-color: $primary;
+}
+
+.border-bottom-primary {
+	border-bottom-color: $primary;
+}
+
+.background-primary {
+	background-color: $primary;
+}

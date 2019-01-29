@@ -1,0 +1,15 @@
+.wrapper {
+    overflow: hidden;
+    padding-top: $space-normal;
+
+    main {
+        text-align: left;
+
+        .header-page {
+            padding: $space-normal 0;
+        }
+    }
+    .questionnaire-content {
+        font-size: 14px;
+    }
+}

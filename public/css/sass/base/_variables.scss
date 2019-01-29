@@ -1,0 +1,95 @@
+/* variables styles */
+
+/* color */
+$color-primary:      rgba(209, 125, 117, 1);
+$color-primary-2:    rgba(209, 125, 117, .8);
+$color-secondary:    rgba(232, 186, 85, 1);
+$color-secondary-2:  rgba(232, 186, 85, .8);
+$color-green:        rgba(87, 187, 99, 1);
+$color-green-2:      rgba(87, 187, 99, .8);
+$color-text:         rgba(67, 90, 112, 1);
+$color-red:          red;
+
+
+$color-black:     rgba(0, 0, 0, 1);
+$color-black-9:   rgba(0, 0, 0, .95);
+$color-black-8:   rgba(0, 0, 0, .8);
+$color-black-5:   rgba(0, 0, 0, .5);
+$color-black-2:   rgba(0, 0, 0, .2);
+$color-black-1:   rgba(0, 0, 0, .1);
+$color-black-f:   rgba(0, 0, 0, .05);
+$color-black-0:   rgba(0, 0, 0, 0);
+
+$color-white:     rgba(255, 255, 255, 1);
+$color-white-8:   rgba(255, 255, 255, .8);
+$color-white-5:   rgba(255, 255, 255, .5);
+$color-white-2:   rgba(255, 255, 255, .2);
+$color-white-1:   rgba(255, 255, 255, .1);
+$color-white-0:   rgba(255, 255, 255, 0);
+
+// font path
+$font-path:             "../fonts/";
+// images path
+$image-path:            "../images/";
+
+// Fonts
+$font-general:       'Orkney', sans-serif;
+$font-w-light:        300;
+$font-w-regular:      400;
+$font-w-bold:         700;
+
+
+// Type
+$letter-spa:               0.08rem;
+$l-h-small:                .75rem; 
+$l-h-normal:               1rem;
+$l-h-big:                  1.5rem; 
+
+// SIZES
+$size-logo:             180px; 
+$size-logo-max:         280px;   
+$size-small:            16px;
+$size-h1:               32px;
+$size-h2:               24px;
+$size-h3:               18px;
+$size-h4:               25px;
+$size-h5:               16px;
+$size-h6:               14px;
+$size-btn:              13px;
+$size-btn-big:          30px;
+$size-x-small:          12px;
+$size-intro:            64px;
+$size-cut-text:         104px;
+
+/* TRANSITIONS */
+$transition-xs:   all .2s ease-out;
+$transition-bg:   background 600ms ease, color 600ms ease;
+
+/* SPACES */
+
+$space-x-small:       3px;
+$space-small:         7.5px;
+$space-normal:        15px;
+$space-big:           30px;
+$space-extra:         60px;
+$space-x-small-n:      -3px;
+$space-small-n:        -7.5px;
+$space-normal-n:      -15px;
+$space-big-n:         -30px;
+$space-extra-n:       -60px;
+$space-footer:         800px;
+$space-header:         300px;
+
+/* RADIUS */
+$b-radius-no:         0px;
+$b-radius-min:        2px;
+$b-radius-max:        300px;
+
+/* OPACITY */
+$opo-min:           0.4;
+$opo-img:           0.2;
+
+/* shadow */
+$shadow-normal:   0px 1px 17px 0px rgba(0,0,0,0.17);
+$shadow-big:      0px 11px 50px -19px rgba(0,0,0,0.75);
+$shadow-btn:      0px 6px 21px -8px rgba(0,0,0,0.57);

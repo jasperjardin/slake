@@ -1,0 +1,131 @@
+.form-control{
+    background: none;
+    border-radius: 0;
+    color: $color-text;
+    font-family: $font-general;
+    font-weight: $font-w-regular;
+    padding: $space-normal $space-small;
+    height: auto !important;
+    border: none;
+    outline-width: 0;
+    border-bottom: 2px solid $color-text;
+    width: 100%;
+    font-size: $size-h1;
+
+    &:focus, &:active{
+        color: $color-text;
+        border-color: $color-primary;
+    }
+}
+.invalid-feedback{
+    color: $color-red;
+    font-weight: $font-w-bold;
+    font-size: $size-btn;
+}
+
+input {
+    &[type="radio"]{
+        &.toggle {
+            display: none;
+
+            & + label {
+                cursor: pointer;
+                min-width: 80px;
+
+                &:after {
+                    content: "";
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    -webkit-transition: left 100ms cubic-bezier(0.77, 0, 0.175, 1);
+                    transition: left 100ms cubic-bezier(0.77, 0, 0.175, 1);
+                    width: 100%;
+                    z-index: -1;
+                }
+            }
+
+            &.toggle-left {
+                & + label {
+                    &:after {
+                        left: 100%;
+                    }
+                }
+            }
+
+            &.toggle-right {
+                & + label {
+                    margin-left: 10px;
+
+                    &:after {
+                        left: -100%;
+                    }
+                }
+            }
+
+            &:checked {
+                & + label {
+                    background: $color-text;
+                    cursor: default;
+                    color: $color-white; 
+
+                    &:after {
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.upform {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+  margin: $space-header auto $space-footer;
+  padding: 0;
+
+  .upform-main {
+    .input-block {
+        padding: $space-big 0;
+        opacity: $opo-min;
+        cursor: default;
+
+        .label {
+            display: block;
+            font-weight: 900;
+            font-size: $size-h2;
+
+            strong {
+                display: inline-block;
+                color: $color-secondary;
+                margin: 0 $space-x-small 0 0;
+            }
+        }
+
+        .input-control {
+            margin: $space-normal 0;
+        }
+
+        &.active {
+            opacity: 1;
+        }
+    }
+  } 
+  
+  .upform-footer {
+    margin-top: $space-big;
+
+    .upform-buttons {
+        overflow: hidden; 
+        .btn {
+            @media (max-width: 1200px) { 
+                width: 100%;
+                margin-bottom: $space-x-small;
+            }
+        } 
+    }
+  }
+}

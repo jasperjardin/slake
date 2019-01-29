@@ -1,0 +1,26 @@
+footer {
+    &#main-footer {
+        text-align: right;
+        padding: 1rem 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        p {
+            text-align: center;
+            font-size: $size-x-small;
+            text-transform: uppercase;
+            letter-spacing: $letter-spa;
+            display: block;
+            margin: 0;
+            text-align: right;
+
+            img {
+                display: inline-block;
+                width: $space-normal;
+                margin: $space-small-n 0 0 $space-x-small;
+            }
+        }
+    }
+}

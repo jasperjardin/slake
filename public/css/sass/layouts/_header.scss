@@ -1,0 +1,93 @@
+header {
+    &#main-header {
+        nav {
+            .navbar-brand {
+                img {
+                    width: $space-big;
+                }
+                @media (max-width: 993px) { 
+                    opacity: 0;
+                }
+            }
+
+            .navbar-nav {
+                li {
+                    border: none;
+
+                    a {
+                        text-transform: uppercase;
+                        letter-spacing: $letter-spa;
+                        font-size: $size-x-small;
+                        font-weight: $font-w-bold;
+                        color: $color-text;
+                        opacity: $opo-min;
+
+                        &:hover,
+                        &:active,
+                        &:focus{
+                            opacity: 1;
+                        }
+                    }
+
+                    &.active {
+                        a {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                @media (max-width: 992px) { 
+                    background: $color-white-8;
+                    border-radius: $b-radius-min;
+                    box-shadow: $shadow-big;
+                }
+            }
+        }
+    }
+
+    &.header-page {
+        .header-page-title-icon {
+            margin: $space-small 0;
+
+            img {
+                display: block;
+                max-width: $size-logo;
+            }  
+
+            &.header-page-title-icon-max {
+                img {
+                    max-width: $size-logo-max;
+                }
+            }
+        }
+        
+
+        p {
+            strong {
+                color: $color-primary;
+            }
+        }
+    }
+}
+
+.navbar-toggler {
+    box-shadow: $shadow-normal;
+    background: $color-text;
+    color: $color-secondary;
+    width: $space-extra;
+    height: $space-extra;
+    border-radius: $b-radius-max;
+    padding: 0;
+    text-align: center;
+    transition: $transition-xs;
+    outline: none;
+
+    img {
+        width: $space-big;
+        margin: 0 auto;
+    }
+
+    &:hover, &:active, &:focus{
+        background: $color-secondary;
+    }
+}

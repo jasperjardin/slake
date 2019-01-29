@@ -1,0 +1,25 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ /*!
+  * Bootstrap v4.0.0-alpha.4 (http://getbootstrap.com)
+  * Copyright 2011-2016 The Bootstrap Authors
+  * Copyright 2011-2016 Twitter, Inc.
+  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+  */
+ /* base styles */
+ @import "base/variables";
+ @import "base/mixins";
+ @import "base/base";
+
+ /* components styles */
+ @import "components/buttons";
+ @import "components/form";
+
+ /* layouts styles */
+ @import "layouts/grid";
+ @import "layouts/header";
+ @import "layouts/footer";
+ @import "layouts/wrapper";

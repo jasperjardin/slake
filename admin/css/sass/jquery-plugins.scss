@@ -1,0 +1,51 @@
+.slake_select2 {
+
+    + .select2 {
+        .select2-selection {
+            background-color: $light_102;
+        }
+    }
+
+    &.sortable {
+        + .select2 {
+            ul.select2-selection__rendered {
+                padding: 5px 5px 0;
+                background-color: $transparent;
+                li {
+                    width: 95%;
+                    padding: 0.5px 5px 2.5px;
+                    margin: 2.5px 0;
+
+                    &.select2-selection__choice {
+                        background-color: $light_101;
+                        cursor: pointer;
+                        
+                        &:hover,
+                        &:focus {
+                            background-color: $dark_100;
+                        }
+                    }
+
+                    &.ui-sortable-helper {
+                        background-color: $dark_100;
+                    }
+
+                    &.select2-search--inline {
+                        padding: 0;
+                        width: 99%;
+                    }
+                    .select2-search__field {
+                        min-width: 100%;
+                        background-color: $light_100;
+                        padding: 5px 2.5px;
+                        border: 1px solid $light_110;
+                        border-radius: 3px;
+                        box-shadow: inset 0px 1px 0px $dark_rgba_50;
+                    }
+                }
+            }
+        }
+
+    }
+
+}

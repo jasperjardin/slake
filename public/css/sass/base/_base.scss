@@ -1,0 +1,231 @@
+/* base styles */
+
+@font-face {
+    font-family: 'orkneybold';
+    src: url('../fonts/orkney-bold-webfont.woff2') format('woff2'),
+         url('../fonts/orkney-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'orkneylight';
+    src: url('../fonts/orkney-light-webfont.woff2') format('woff2'),
+         url('../fonts/orkney-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'orkneyregular';
+    src: url('../fonts/orkney-regular-webfont.woff2') format('woff2'),
+         url('../fonts/orkney-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body.admin-bar #main-header .navbar {
+    margin-top: 32px;
+}
+
+body.bd-questionnaires {
+    font-family: $font-general;
+    font-weight: $font-w-regular;
+    font-size: $base-font-size;
+    color: $color-text;
+    position: relative;
+}
+
+main{
+    img{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+a{
+    color: $color-primary;
+    transition: $transition-xs;
+    &:hover, &:active, &:focus{
+        color: $color-primary-2;
+        text-decoration: none;
+    }
+}
+
+h1, h2, h3, h4{
+   line-height: $cap-height;
+   margin-bottom: $space-normal;
+}
+
+h1{
+    font-size: $size-h1;
+    font-weight:  $font-w-light;
+}
+h2{
+    font-size: $size-h2;
+    font-weight:  $font-w-light;
+
+    strong {
+        color: $color-primary;
+        display: block;
+        font-weight: $font-w-bold;
+    }
+}
+h3{
+    font-size: $size-h3;
+}
+h4{
+    font-size: $size-h4;
+    font-weight: $font-w-bold;
+}
+h5{
+    font-size: $size-h5;
+    font-weight: $font-w-regular;
+    line-height: $base-line-height;
+}
+h6{
+    font-size: $size-h6;
+    font-weight: $font-w-regular;
+}
+p{
+    small{
+        font-size: $size-h6;
+        display: block;
+    }
+    em{
+        font-style: normal;
+        font-weight: $font-w-bold;
+        color: $color-primary;
+    }
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: $size-h6;
+    li{
+        position: relative;
+        border-bottom: solid $color-black-1 1px;
+        padding: $space-small;
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+}
+.intro-title {
+    font-size: $size-intro;
+
+    @media (max-width: 520px) {
+        font-size: $size-h1;
+    }
+}
+
+.form-title {
+    position: relative;
+    margin-bottom: $space-normal;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -9000px;
+        right: calc(100% + 15px);
+        top: $space-small;
+        height: 1px;
+        background: $color-black-f;
+    }
+}
+
+blockquote{
+    p{
+        font-weight: $font-w-light;
+        font-size: $size-h2;
+        color: $color-black-5;
+    }
+}
+
+.up-content {
+    margin: $space-header auto $space-extra;
+
+    @media (max-width: 993px) {
+        margin: $space-extra auto $space-extra;
+    }
+}
+
+.cut {
+    position: fixed;
+    top: 0;
+    width: 100vmax;
+    height: 120%;
+    display: block;
+    z-index: -1;
+
+
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    pointer-events: none;
+
+    &.cut-01 {
+        background:url('#{$image-path}logo-bd-cut-01.svg') no-repeat 0 0;
+        background-size: 15%;
+    }
+
+    &.cut-02 {
+        background:url('#{$image-path}logo-bd-cut-02.svg') no-repeat 0 bottom;
+        background-size: 18%;
+    }
+
+    &.cut-03 {
+        background:url('#{$image-path}logo-bd-cut-03.svg') no-repeat right -150px;
+        background-size: 24%;
+    }
+
+    &.cut-text {
+        text-align: left;
+
+        h6 {
+            font-size: $size-cut-text;
+            font-weight: $font-w-bold;
+            margin-top: 0;
+            margin-left: 0;
+            transform: rotate(-35deg);
+            opacity: 0.1;
+
+            span {
+                display: block;
+            }
+
+            @media (max-width:1200px) {
+                margin-left: -10%;
+            }
+        }
+    }
+}
+
+article {
+    &.archive {
+        &.bd-questionnaires {
+            &.entry {
+                margin: 0 0 15px;
+            }
+        }
+    }
+}
+
+.hfeed .entry {
+    .entry-header {
+        &.archive {
+            margin: 0;
+            .entry-title {
+                font-size: 18px;
+                color: #767676;
+            }
+        }
+    }
+}
